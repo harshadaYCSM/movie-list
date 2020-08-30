@@ -8,9 +8,12 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "tailwindcss": "^1.7.6",
+    "whatwg-fetch": "^3.4.0"
   },
   "scripts": {
+    "cssbuild": "tailwind build src/index.css -o public/style.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

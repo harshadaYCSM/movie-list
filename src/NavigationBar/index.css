@@ -1,0 +1,19 @@
+
+.navigationBar {
+    position: fixed;
+    top:0;
+    background-size : 100% 130px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130px;
+    color: white;
+  }
+  
+.navigationBar h2 {
+    margin:0;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    left: 100px;
+    font-size: -webkit-xxx-large;
+    top: 8px;
+}
