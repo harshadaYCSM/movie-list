@@ -7,7 +7,7 @@ export default class ListContainer extends React.Component {
 
     constructor() {
         super();
-        this.state = {pageNo : 1,
+        this.state = {
             apiUrl : '../API/CONTENTLISTINGPAGE-PAGE',
             contentList : [],
             pageNumber : 1
@@ -18,13 +18,12 @@ export default class ListContainer extends React.Component {
         this.getPageData();
         window.addEventListener('scroll', () => {
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-               console.log("Bottom of the page. going to next page");
+               //console.log("Bottom of the page. going to next page");
                let newPage = this.state.pageNumber;
-               newPage++;
                 this.setState({
-                    pageNumber: newPage
+                    pageNumber: newPage +1
                 });
-                console.log("Page Number : " + newPage) 
+                //console.log("Page Number : " + newPage) 
                this.getOtherPageData(newPage);
                //show loading spinner and make fetch request to api
             }
