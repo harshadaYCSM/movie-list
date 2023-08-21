@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollableGridList {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 4px;
+    width: 100%;
+    align-items: center;
+}

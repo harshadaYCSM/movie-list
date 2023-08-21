@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.poster {
+    
+}
+.posterContainer img {
+    width: 10vw;
+}
+
+.posterContainer p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
+.posterContainer {
+    max-height: 45vh;
+    padding: 1%;
+    transition: transform 0.5s, box-shadow 0.3s;
+    margin: 1%;
+}
+
+.posterContainer:hover {
+    transform: scale(1.1) translateY(-5%); /* Scale and lift the element on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Apply a shadow on hover */
+}
+
+
+ 

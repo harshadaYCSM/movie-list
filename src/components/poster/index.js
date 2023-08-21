@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css'
 
-export default class ListElement extends React.Component {
+export default class Poster extends React.Component {
 
     constructor(props) {
         super(props)
@@ -10,17 +9,19 @@ export default class ListElement extends React.Component {
             missingImage : false
         }
         this.sourceImage = this.props.posImg
+        console.log("Source Image: " , this.sourceImage)
     }
 
     imageOnerror() {
-        this.sourceImage = "placeholder_for_missing_posters.png"
+        console.log("image error")
         this.setState({missingImage:true})        
     }
+
     render() {
         return (
-        <div className="listElement">
-            <img src={this.sourceImage} alt={this.props.name} onError={() => {this.imageOnerror()}}></img>
-            <h3>{this.props.name}</h3>
+        <div className="posterContainer">
+            <img className="poster" src={this.sourceImage} alt={this.props.name} onError={() => {this.imageOnerror()}}></img>
+            <p>{this.props.name}</p>
         </div>        
         )
     }

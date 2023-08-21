@@ -1,0 +1,13 @@
+.homePage {
+    background-color: black;
+    padding-top: 5vh;
+    height: 100%;
+    width: 100%;
+}
+
+.searchBar {
+    position: fixed;
+    padding: 10px;
+    left: 73vw;
+    top: 2vh;
+}

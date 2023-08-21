@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
-import NavigationBar from './NavigationBar/index.js'
-import ListContainer from './ListContainer/index.js'
+import NavBar from './components/navbar/index.js'
+import HomePage from './views/homepage/index.js'
 
 const appContainer = (
     <div className="appContainer">
-        <NavigationBar />
-        <ListContainer />
+        <NavBar />
+        <HomePage />
     </div>
 )
 
