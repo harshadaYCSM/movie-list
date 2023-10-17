@@ -1,0 +1,2 @@
+@tailwind base;@tailwind components;@tailwind utilities;.posterContainer img{width:10vw}.posterContainer p{font-family:"Titillium Web",sans-serif;font-size:1.1rem;color:#fff}.posterContainer{max-height:45vh;padding:1%;transition:transform .5s,box-shadow .3s;margin:1%}.posterContainer:hover{transform:scale(1.1) translateY(-5%);box-shadow:0 0 10px rgba(0,0,0,.3)}
+/*# sourceMappingURL=3.226d6407.chunk.css.map */
